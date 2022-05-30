@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária Safety Car</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/carrossel.css">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Nossos Carros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="addCarros.html">Adicionar Carros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a> -->
+                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex busca" role="search">
+                        <input id="buscar" class="form-control me-2" type="search" placeholder="Buscar...">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./img/carrossel carro1.jpeg" class="d-block w-100 carrossel foto1" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/carrossel carro2.jpeg" class=" carrossel mudar2 d-block w-100 foto2" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/carrossel carro3.jpeg" class="carrossel d-block w-100 foto3" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="cards d-sm-flex d-md-flex-content-evenly justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="./img/carro.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Porsche 911 GT3 RS </h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modalPorsche">
+                        Ver detalhes
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modalPorsche" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Porsche 911 GT3 RS</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="conteudo d-flex flex-column">
+                                        <div class="imagem d-flex justify-content-center">
+                                            <img src="./img/720s.jpg" class="carro-imagem-modal foto-audi" alt="">
+                                        </div>
+                                        <div class="texto">
+                                            <p class="info-vel"><b>Velocidade Máxima:</b> 318km/h</p>
+                                            <p class="info-pot"><b>Potência:</b> 500 HP</p>
+                                            <p class="info-motor"><b>Motor:</b> 4,0 | V8</p>
+                                            <p class="infor-cem"><b>Aceleração de 0 a 100km/h:</b> 3,4 segundos</p>
+                                            <p class="info-comb"><b>Tanque de Combustível:</b> 100 litros</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary tornarCinza" data-bs-toggle="modal"
+                                        data-bs-target=".excluirPorsche">
+                                        Excluir
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button trigger modal -->
+
+
+                    <!-- Modal Excluir-->
+                    <div class="modal fade excluirPorsche" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deseja excluir?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza que deseja excluir o carro Porsche 911 GT3 RS?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn" data-bs-dismiss="modal">Excluir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/carro2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ford Mustang Shelby</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modalMustang">
+                        Ver detalhes
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modalMustang" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Ford Mustang Shelby</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="conteudo d-flex flex-column">
+                                        <div class="imagem d-flex justify-content-center">
+                                            <img src="./img/shelby.jpg" class="carro-imagem-modal foto-audi" alt="">
+                                        </div>
+                                        <div class="texto">
+                                            <p class="info-vel"><b>Velocidade Máxima:</b> 321km/h</p>
+                                            <p class="info-pot"><b>Potência:</b> 771 HP</p>
+                                            <p class="info-motor"><b>Motor:</b> 5,2 | V8</p>
+                                            <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 2,9 segundos</p>
+                                            <p class="info-comb"><b>Tanque de Combustível:</b> 72 litros</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/carro3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Audi R8 Coupe</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modalAudi">
+                        Ver detalhes
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modalAudi" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Audi R8 Coupe</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="conteudo d-flex flex-column">
+                                        <div class="imagem d-flex justify-content-center">
+                                            <img src="./img/audiR8.jpg" class="carro-imagem-modal foto-audi" alt="">
+                                        </div>
+                                        <div class="texto">
+                                            <p class="info-vel"><b>Velocidade Máxima:</b> 330km/h</p>
+                                            <p class="info-pot"><b>Potência:</b> 610 HP</p>
+                                            <p class="info-motor"><b>Motor:</b> 5,2 | V10</p>
+                                            <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 3,2 segundos</p>
+                                            <p class="info-comb"><b>Tanque de Combustível:</b> 83 litros</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/carro4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lamborghini Huracán Performante</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target=".modallPerformante">
+                        Ver detalhes
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modallPerformante" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Lamborghini Huracán Performante</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="conteudo d-flex flex-column">
+                                        <div class="imagem d-flex justify-content-center">
+                                            <img src="./img/performante-carro4.jpg" class="carro-imagem-modal foto-audi"
+                                                alt="">
+                                        </div>
+                                        <div class="texto">
+                                            <p class="info-vel"><b>Velocidade Máxima:</b> 325km/h</p>
+                                            <p class="info-pot"><b>Potência:</b> 640 HP</p>
+                                            <p class="info-motor"><b>Motor:</b> V10</p>
+                                            <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 2,9 segundos</p>
+                                            <p class="info-comb"><b>Tanque de Combustível:</b> 83 litros</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards d-sm-flex d-md-flex-content-evenly justify-content-around">
+            <div class="card" style="width: 18rem;">
+                <img src="./img/carro5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lamborghini Huracán</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modalLambo">
+                        Ver detalhes
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modalLambo" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Lamborghini Huracán</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="conteudo d-flex flex-column">
+                                        <div class="imagem d-flex justify-content-center">
+                                            <img src="./img/huracan.jpg" class="carro-imagem-modal foto-audi" alt="">
+                                        </div>
+                                        <div class="texto">
+                                            <p class="info-vel"><b>Velocidade Máxima:</b> 325km/h</p>
+                                            <p class="info-pot"><b>Potência:</b> 640 HP</p>
+                                            <p class="info-motor"><b>Motor:</b> 5,2 | V10</p>
+                                            <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 3,1 segundos</p>
+                                            <p class="info-comb"><b>Tanque de Combustível:</b> 83 litros</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/carro6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ferrari 812 GTS</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modalFerrari">
+                        Ver detalhes
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modalFerrari" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Ferrari 812 GTS</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="conteudo d-flex flex-column">
+                                        <div class="imagem d-flex justify-content-center">
+                                            <img src="./img/ferrari.jpg" class="carro-imagem-modal foto-audi" alt="">
+                                        </div>
+                                        <div class="texto">
+                                            <p class="info-vel"><b>Velocidade Máxima:</b> 340km/h</p>
+                                            <p class="info-pot"><b>Potência:</b> 800 HP</p>
+                                            <p class="info-motor"><b>Motor:</b> 6,5 | V12</p>
+                                            <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 3 segundos</p>
+                                            <p class="info-comb"><b>Tanque de Combustível:</b> 92 litros</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/carro7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Aston Martin Vantage</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modalAston">
+                        Ver detalhes
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modalAston" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Aston Martin Vantage</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="conteudo d-flex flex-column">
+                                        <div class="imagem d-flex justify-content-center">
+                                            <img src="./img/aston-martin.jpg" class="carro-imagem-modal" alt="">
+                                        </div>
+                                        <div class="texto">
+                                            <p class="info-vel"><b>Velocidade Máxima:</b> 314km/h</p>
+                                            <p class="info-pot"><b>Potência:</b> 510 - 535 HP</p>
+                                            <p class="info-motor"><b>Motor:</b> 4,0 | V8</p>
+                                            <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 3,6 segundos</p>
+                                            <p class="info-comb"><b>Tanque de Combustível:</b> 76 litros</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./img/carro8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Nissan GTR R35</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".modalNissan">
+                        Ver detalhes
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade modalNissan" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Nissan GTR R35</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="conteudo d-flex flex-column">
+                                        <div class="imagem d-flex justify-content-center">
+                                            <img src="./img/gtr-r35.jpeg" class="carro-imagem-modal" alt="">
+                                        </div>
+                                        <div class="texto">
+                                            <p class="info-vel"><b>Velocidade Máxima:</b> 315km/h</p>
+                                            <p class="info-pot"><b>Potência:</b> 530 - 608 HP</p>
+                                            <p class="info-motor"><b>Motor:</b> 3,8 | V6</p>
+                                            <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 2,5 segundos</p>
+                                            <p class="nfo-comb"><b>Tanque de Combustível:</b> 74 litros</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+    <script src="./js/filtrar.js"></script>
+    <script src="./js/excluirCarro.js"></script>
+    <script src="./js/liveToast.js"></script>
+</body>
+
+</html>
