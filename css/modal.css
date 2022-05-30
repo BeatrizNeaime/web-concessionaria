@@ -1,0 +1,29 @@
+@import url(root.css);
+
+.btn-close:hover{
+    background-color: rgba(51, 128, 106, 0.4);
+}
+
+.btn-secondary:hover{
+    background-color: var(--verde-escuro);
+}
+
+.carro-imagem-modal{
+    border-radius: 6px;
+    object-fit: cover;
+    width: 400px;
+}
+
+.foto-audi{
+    height: 300px;
+    object-fit: cover;
+}
+
+.modal-content{
+    background-color: var(--cinza-escuro);
+}
+
+.texto{
+    margin-top: 15px;
+    margin-left: 15px;
+}

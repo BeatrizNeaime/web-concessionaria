@@ -1,0 +1,21 @@
+:root {
+    --cinza-claro: #666360;
+    --cinza-escuro: #232129;
+    --verde: #05A678;
+    --verde-escuro: #33806a;
+}
+
+main{
+    background-color: var(--cinza-claro);
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--cinza-claro);
+}
+
+.invisivel{
+    display: none;
+}

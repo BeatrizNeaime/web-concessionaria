@@ -1,0 +1,8 @@
+.carrossel{
+    object-fit: cover;
+    height: 400px;
+}
+
+.foto3{
+    object-position: 0 65%;
+} 

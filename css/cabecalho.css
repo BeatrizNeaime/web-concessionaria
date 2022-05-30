@@ -1,0 +1,37 @@
+@import url(./root.css);
+
+.btn-outline-success {
+    background-color: var(--verde);
+    color: #fefefe;
+}
+
+.btn-outline-success:hover{
+    background-color: var(--verde-escuro);
+}
+
+#carouselExampleDark{
+    margin: 3rem 2rem;
+}
+
+.navbar{
+    background-color: var(--cinza-escuro)!important;
+}
+
+.navbar a{
+    color: #fefefe;
+}
+
+.navbar a:hover{
+    background-color: var(--verde-escuro);
+    border-radius: 12px;
+}
+
+.navbar-toggler{
+    background-color: #fefefe;
+}
+
+.active{
+    background-color: var(--verde);
+    border-radius: 12px;
+    margin: 0 15px;
+}

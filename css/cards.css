@@ -1,0 +1,91 @@
+@import url(root.css);
+
+.card{
+    background-color: var(--cinza-escuro);
+    color: #fefefe;
+}
+
+.card .btn-primary{
+    background-color: var(--verde);
+    border: none;
+}
+
+.card .btn-primary:hover{
+    background-color: var(--verde-escuro);
+}
+
+.cards {
+    margin-bottom: 30px;
+}
+
+.tornarCinza{
+    background-color: var(--cinza-claro) !important;
+}
+
+@media screen and (max-width: 576px) {
+
+    /*celulares*/
+    .cards {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    /*tablet*/
+    .cards {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 863px) {
+
+    /*laptops*/
+    .cards {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 864px) and (max-width: 992px) {
+
+    /*pc*/
+    .cards {
+        align-items: center;
+        display: flex;
+    }
+
+    .card {
+        margin-right: 15px;
+    }
+
+    .card:first-child {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+
+    /*pc maior*/
+    .card {
+        margin: 0 15px;
+    }
+
+    .cards:nth-child(){
+        margin-bottom: 1rem;
+    }
+}
