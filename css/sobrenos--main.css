@@ -1,0 +1,38 @@
+.bea{
+    height: 372.844px;
+    object-fit: cover;
+}
+
+.cards{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    width: 93vw;
+}
+
+.principal{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    padding-bottom: 15px;
+}
+
+.sobre-mim{
+
+    text-align: justify;
+}
+
+.redes{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes a{
+    color: #fefefe;
+    font-size: 45px;
+    text-decoration: none;
+}

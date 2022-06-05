@@ -1,7 +1,6 @@
-var botaoExcluir = document.querySelector(".botaoExcluir")
+const $botaoExcluir = document.querySelectorAll(".botaoExcluir")
 
-botaoExcluir.addEventListener("click", function(){
-    console.log("oi")
+$botaoExcluir.forEach($botaoExcluir => $botaoExcluir.addEventListener('click', function(){
     var evento = event.target
     var pai = evento.parentNode
     var avo = pai.parentNode
@@ -9,5 +8,8 @@ botaoExcluir.addEventListener("click", function(){
     var trisavo = bisavo.parentNode
     var nsei = trisavo.parentNode
     var help = nsei.parentNode
-    help.classList.add("invisivel")
-})
+
+    setTimeout(function () {
+        help.classList.add("invisivel")
+    }, 500)
+}))

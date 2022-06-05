@@ -32,22 +32,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="addCarros.html">Adicionar Carros</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a> -->
-                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul> -->
-                        </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Disabled</a>
+                            <a class="nav-link" href="./sobre.html">Sobre Nós</a>
                         </li>
                     </ul>
                     <form class="d-flex busca" role="search">
@@ -104,10 +90,10 @@
             </button>
         </div>
         <div class="cards d-sm-flex d-md-flex-content-evenly justify-content-around">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;"> <!--Porsche-->
                 <img src="./img/carro.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Porsche 911 GT3 RS </h5>
+                    <h5 class="card-title">Porsche 911 GT3 RS</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
                     <!-- Button trigger modal -->
@@ -131,11 +117,14 @@
                                             <img src="./img/720s.jpg" class="carro-imagem-modal foto-audi" alt="">
                                         </div>
                                         <div class="texto">
+                                            <p class="info-marca"><b>Marca: </b>Porsche</p>
+                                            <p class="info-modelo"><b>Modelo: </b>911 GT3 RS</p>
+                                            <p class="info-ano"><b>Ano: </b>2022</p>
+                                            <p class="info-valor"><b>Valor: </b>R$1,149 milhão</p>
                                             <p class="info-vel"><b>Velocidade Máxima:</b> 318km/h</p>
                                             <p class="info-pot"><b>Potência:</b> 500 HP</p>
                                             <p class="info-motor"><b>Motor:</b> 4,0 | V8</p>
                                             <p class="infor-cem"><b>Aceleração de 0 a 100km/h:</b> 3,4 segundos</p>
-                                            <p class="info-comb"><b>Tanque de Combustível:</b> 100 litros</p>
                                         </div>
                                     </div>
                                 </div>
@@ -150,7 +139,6 @@
                         </div>
                     </div>
                     <!-- Button trigger modal -->
-
 
                     <!-- Modal Excluir-->
                     <div class="modal fade excluirPorsche" id="exampleModal" tabindex="-1"
@@ -167,16 +155,15 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
-                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn" data-bs-dismiss="modal">Excluir</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn"
+                                        data-bs-dismiss="modal">Excluir</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;"> <!--Mustang-->
                 <img src="./img/carro2.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ford Mustang Shelby</h5>
@@ -203,24 +190,54 @@
                                             <img src="./img/shelby.jpg" class="carro-imagem-modal foto-audi" alt="">
                                         </div>
                                         <div class="texto">
+                                            <p class="info-marca"><b>Marca: </b>Ford</p>
+                                            <p class="info-modelo"><b>Modelo: </b>Mustang Shelby</p>
+                                            <p class="info-ano"><b>Ano: </b>2021</p>
+                                            <p class="info-valor"><b>Valor: </b>R$400 mil</p>
                                             <p class="info-vel"><b>Velocidade Máxima:</b> 321km/h</p>
                                             <p class="info-pot"><b>Potência:</b> 771 HP</p>
                                             <p class="info-motor"><b>Motor:</b> 5,2 | V8</p>
                                             <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 2,9 segundos</p>
-                                            <p class="info-comb"><b>Tanque de Combustível:</b> 72 litros</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary tornarCinza" data-bs-toggle="modal"
+                                        data-bs-target=".excluirMustang">
+                                        Excluir
+                                    </button>
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                        data-bs-dismiss="modal">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Excluir-->
+                    <div class="modal fade excluirMustang" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deseja excluir?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza que deseja excluir o carro Ford Mustang Shelby?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn"
+                                        data-bs-dismiss="modal">Excluir</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <!-- ---------------------------------------------------------------------------------------------------- -->
+            <div class="card" style="width: 18rem;"> <!--Audi-->
                 <img src="./img/carro3.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Audi R8 Coupe</h5>
@@ -247,24 +264,51 @@
                                             <img src="./img/audiR8.jpg" class="carro-imagem-modal foto-audi" alt="">
                                         </div>
                                         <div class="texto">
+                                            <p class="info-marca"><b>Marca: </b>Audi</p>
+                                            <p class="info-modelo"><b>Modelo: </b>R8 Coupe</p>
+                                            <p class="info-ano"><b>Ano: </b> 2022</p>
+                                            <p class="info-valor"><b>Valor: </b> R$1,66 milhão</p>
                                             <p class="info-vel"><b>Velocidade Máxima:</b> 330km/h</p>
                                             <p class="info-pot"><b>Potência:</b> 610 HP</p>
                                             <p class="info-motor"><b>Motor:</b> 5,2 | V10</p>
                                             <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 3,2 segundos</p>
-                                            <p class="info-comb"><b>Tanque de Combustível:</b> 83 litros</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary tornarCinza" data-bs-toggle="modal"
+                                        data-bs-target=".excluirAudi">
+                                        Excluir
+                                    </button>
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                        data-bs-dismiss="modal">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Excluir-->
+                    <div class="modal fade excluirAudi" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deseja excluir?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza que deseja excluir o carro Audi R8 Coupe?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn"
+                                        data-bs-dismiss="modal">Excluir</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;"> <!--Performante-->
                 <img src="./img/carro4.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Lamborghini Huracán Performante</h5>
@@ -293,17 +337,44 @@
                                                 alt="">
                                         </div>
                                         <div class="texto">
+                                            <p class="info-marca"><b>Marca: </b> Lamborghini</p>
+                                            <p class="info-modelo"><b>Modelo: </b>Huracán Performante</p>
+                                            <p class="info-ano"><b>Ano:</b> 2022</p>
+                                            <p class="info-valor"><b>Valor: </b> 2,915 milhões</p>
                                             <p class="info-vel"><b>Velocidade Máxima:</b> 325km/h</p>
                                             <p class="info-pot"><b>Potência:</b> 640 HP</p>
                                             <p class="info-motor"><b>Motor:</b> V10</p>
                                             <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 2,9 segundos</p>
-                                            <p class="info-comb"><b>Tanque de Combustível:</b> 83 litros</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary tornarCinza" data-bs-toggle="modal"
+                                        data-bs-target=".excluirPerformante">
+                                        Excluir
+                                    </button>
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                        data-bs-dismiss="modal">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Excluir-->
+                    <div class="modal fade excluirPerformante" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deseja excluir?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza que deseja excluir o carro Lamborghini Huracán Performante?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn"
+                                        data-bs-dismiss="modal">Excluir</button>
                                 </div>
                             </div>
                         </div>
@@ -312,7 +383,7 @@
             </div>
         </div>
         <div class="cards d-sm-flex d-md-flex-content-evenly justify-content-around">
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;"> <!--Huracán-->
                 <img src="./img/carro5.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Lamborghini Huracán</h5>
@@ -339,17 +410,45 @@
                                             <img src="./img/huracan.jpg" class="carro-imagem-modal foto-audi" alt="">
                                         </div>
                                         <div class="texto">
+                                            <p class="info-marca"><b>Marca: </b> Lamborghini</p>
+                                            <p class="info-modelo"><b>Modelo: </b>Huracán</p>
+                                            <p class="info-ano"><b>Ano: </b>2022</p>
+                                            <p class="info-valor"><b>Valor: </b>R$6,5 milhões</p>
                                             <p class="info-vel"><b>Velocidade Máxima:</b> 325km/h</p>
                                             <p class="info-pot"><b>Potência:</b> 640 HP</p>
                                             <p class="info-motor"><b>Motor:</b> 5,2 | V10</p>
                                             <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 3,1 segundos</p>
-                                            <p class="info-comb"><b>Tanque de Combustível:</b> 83 litros</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary tornarCinza" data-bs-toggle="modal"
+                                        data-bs-target=".excluirLambo">
+                                        Excluir
+                                    </button>
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                        data-bs-dismiss="modal">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Excluir-->
+                    <div class="modal fade excluirLambo" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deseja excluir?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza que deseja excluir o carro Lamborghini Huracán?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn"
+                                        data-bs-dismiss="modal">Excluir</button>
                                 </div>
                             </div>
                         </div>
@@ -357,7 +456,7 @@
 
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;"> <!--Ferrari-->
                 <img src="./img/carro6.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Ferrari 812 GTS</h5>
@@ -384,24 +483,53 @@
                                             <img src="./img/ferrari.jpg" class="carro-imagem-modal foto-audi" alt="">
                                         </div>
                                         <div class="texto">
+                                            <p class="info-marca"><b>Marca: </b>Ferrari</p>
+                                            <p class="info-modelo"><b>Modelo: </b>812 GTS</p>
+                                            <p class="info-ano"><b>Ano: </b>2022</p>
+                                            <p class="info-valor"><b>Valor: </b>R$3,710 milhões</p>
                                             <p class="info-vel"><b>Velocidade Máxima:</b> 340km/h</p>
                                             <p class="info-pot"><b>Potência:</b> 800 HP</p>
                                             <p class="info-motor"><b>Motor:</b> 6,5 | V12</p>
                                             <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 3 segundos</p>
-                                            <p class="info-comb"><b>Tanque de Combustível:</b> 92 litros</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary tornarCinza" data-bs-toggle="modal"
+                                        data-bs-target=".excluirFerrari">
+                                        Excluir
+                                    </button>
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                        data-bs-dismiss="modal">Editar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Modal Excluir-->
+                    <div class="modal fade excluirFerrari" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deseja excluir?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza que deseja excluir o carro Ferrari 812 GTS?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn"
+                                        data-bs-dismiss="modal">Excluir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;"> <!--aston-->
                 <img src="./img/carro7.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Aston Martin Vantage</h5>
@@ -428,24 +556,53 @@
                                             <img src="./img/aston-martin.jpg" class="carro-imagem-modal" alt="">
                                         </div>
                                         <div class="texto">
+                                            <p class="info-marca"><b>Marca: </b>Aston Martin</p>
+                                            <p class="info-modelo"><b>Modelo: </b>Vantage</p>
+                                            <p class="info-ano"><b>Ano: </b>2022</p>
+                                            <p class="info-valor"><b>Valor: </b>R$5 milhões</p>
                                             <p class="info-vel"><b>Velocidade Máxima:</b> 314km/h</p>
                                             <p class="info-pot"><b>Potência:</b> 510 - 535 HP</p>
                                             <p class="info-motor"><b>Motor:</b> 4,0 | V8</p>
                                             <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 3,6 segundos</p>
-                                            <p class="info-comb"><b>Tanque de Combustível:</b> 76 litros</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary tornarCinza" data-bs-toggle="modal"
+                                        data-bs-target=".excluirAston">
+                                        Excluir
+                                    </button>
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                        data-bs-dismiss="modal">Editar</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Modal Excluir-->
+                    <div class="modal fade excluirAston" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deseja excluir?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza que deseja excluir o carro Aston Martin Vantage?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn"
+                                        data-bs-dismiss="modal">Excluir</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 18rem;"> <!--Nissan-->
                 <img src="./img/carro8.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nissan GTR R35</h5>
@@ -472,17 +629,45 @@
                                             <img src="./img/gtr-r35.jpeg" class="carro-imagem-modal" alt="">
                                         </div>
                                         <div class="texto">
+                                            <p class="info-marca"><b>Marca: </b>Nissan</p>
+                                            <p class="info-modelo"><b>Modelo: </b>GTR R35</p>
+                                            <p class="info-ano"><b>Ano: </b>2022</p>
+                                            <p class="info-valor"><b>Valor: </b>R$769.109,00</p>
                                             <p class="info-vel"><b>Velocidade Máxima:</b> 315km/h</p>
                                             <p class="info-pot"><b>Potência:</b> 530 - 608 HP</p>
                                             <p class="info-motor"><b>Motor:</b> 3,8 | V6</p>
                                             <p class="info-cem"><b>Aceleração de 0 a 100km/h:</b> 2,5 segundos</p>
-                                            <p class="nfo-comb"><b>Tanque de Combustível:</b> 74 litros</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary tornarCinza" data-bs-toggle="modal"
+                                        data-bs-target=".excluirNissan">
+                                        Excluir
+                                    </button>
                                     <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Fechar</button>
+                                        data-bs-dismiss="modal">Editar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal Excluir-->
+                    <div class="modal fade excluirNissan" id="exampleModal" tabindex="-1"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Deseja excluir?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tem certeza que deseja excluir o carro Nissan GTR R35?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                                    <button type="button" class="btn btn-primary botaoExcluir" id="liveToastBtn"
+                                        data-bs-dismiss="modal">Excluir</button>
                                 </div>
                             </div>
                         </div>
@@ -501,7 +686,6 @@
         crossorigin="anonymous"></script>
     <script src="./js/filtrar.js"></script>
     <script src="./js/excluirCarro.js"></script>
-    <script src="./js/liveToast.js"></script>
 </body>
 
 </html>
