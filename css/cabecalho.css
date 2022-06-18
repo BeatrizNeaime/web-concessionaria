@@ -30,7 +30,7 @@
     background-color: #fefefe;
 }
 
-.active{
+.link-active{
     background-color: var(--verde);
     border-radius: 12px;
     margin: 0 15px;
