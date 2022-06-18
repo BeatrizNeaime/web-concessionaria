@@ -13,6 +13,11 @@
     margin: 3rem 2rem;
 }
 
+.icone{
+    height: 25px;
+    object-fit: cover;
+}
+
 .navbar{
     background-color: var(--cinza-escuro)!important;
 }

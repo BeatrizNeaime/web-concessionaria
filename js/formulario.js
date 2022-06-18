@@ -1,7 +1,7 @@
 // validação do ano usando jQuery
 
 var div_ano = $(".div-ano")
-var ano = $("#info-ano")
+var ano = $("#ano")
 const ano_atual = new Date().getFullYear()
 
 ano.on("input", function () {
@@ -19,42 +19,36 @@ ano.on("input", function () {
 //validação e formatação do valor
 var valor = $("#valor")
 var div_valor = $(".div-valor")
+const val_max = 100000000
+var floatt = parseFloat(valor.val())
 
-valor.on("input", function() {
+valor.on("input", function () {
     if (valor.val().length > 0) {
-        if (valor.val() <= 0 || valor.val() > (100 ** 6)) {
+        if (floatt <= 0 || floatt > val_max) {
             div_valor.removeClass('invisivel')
+        } else {
+            div_valor.addClass('invisivel')
         }
     } else {
         div_valor.addClass('invisivel')
     }
 })
 
-//Verificação de campos vazios
 
-function validaMarca(){
-    var input = $("#marca")
-    var div_marca = $(".div-marca")
-    if(input.val().length == 0 ){
-        div_valor.removeClass('invisivel')
-    } else{
-        div_marca.addClass('invisivel')
-    }
-}
+//Verificação de campos obrigatórios vazios
 
-function validaModelo(){
-    var input = $("#modelo")
-    var div_modelo = $(".div-modelo")
-    if(input.val().length == 0 ){
-        div_valor.removeClass('invisivel')
-    } else{
-        div_modelo.addClass('invisivel')
-    }
-}
-
+const ids = ['#marca', '#modelo', '#ano', '#valor', '#cor', '#floatingTextarea']
+const divs = ['.div-marca', '.div-modelo', '.div-ano', '.div-valor', '.div-cor', '.div-desc']
 var botao = $(".enviar")
 
-botao.on("click", function(){
-    validaMarca()
-    validaModelo()
+botao.on("click", function () {
+    console.log(ids.length)
+    for (let i = 0; i < ids.length; i++) {
+        if ($(ids[i]).val().length < 1) {
+            $(divs[i]).removeClass('invisivel')
+            console.log($(divs[i]))
+        } else {
+            $(divs[i]).addClass('invisivel')
+        }
+    }
 })
