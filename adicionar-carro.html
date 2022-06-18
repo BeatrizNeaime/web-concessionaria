@@ -12,13 +12,20 @@
     <link rel="stylesheet" href="./css/adicionar carro/main.css">
     <link rel="stylesheet" href="./css/adicionar carro/responsivo.css">
     <link rel="stylesheet" href="./css/cabecalho--responsivo.css">
+
+    <!-- Ícone -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icones/safety car/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/icones/safety car/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/icones/safety car/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#"><img src="./img/icones/icons8-led-64.png" alt="" class="icone"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -53,30 +60,31 @@
                             data-js="marca">
                         <label for="marca">Marca</label>
                         <div class="div-marca invisivel erro">
-                            <p class="erro-marca">Por favor, insira conteúdo válido!</p>
+                            <p class="erro-marca">Por favor, preencha corretamente!</p>
                         </div>
                     </div>
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="modelo" placeholder="Modelo" required
                             data-js="modelo">
-                        <label for="modelo">Modelo</label><div class="div-modelo invisivel erro">
-                            <p class="erro-modelo">Por favor, insira conteúdo válido!</p>
+                        <label for="modelo">Modelo</label>
+                        <div class="div-modelo invisivel erro">
+                            <p class="erro-modelo">Por favor, preencha corretamente!</p>
                         </div>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="info-ano" placeholder="Ano" required data-js="ano">
+                        <input type="text" class="form-control" id="ano" placeholder="Ano" required data-js="ano">
                         <label for="ano">Ano</label>
                         <div class="div-ano invisivel erro">
-                            <p class="erro-ano">Por favor, selecione um ano válido!</p>
+                            <p class="erro-ano">Por favor, preencha corretamente!</p>
                         </div>
                     </div>
                 </div>
                 <div class="container d-flex linha">
                     <div class="form-floating mb-3 valor">
                         <input type="text" class="form-control" id="valor" placeholder="Valor" required data-js="valor">
-                        <label for="valor">Valor (R$xx,xx)</label>
+                        <label for="valor">Valor (R$)</label>
                         <div class="div-valor erro invisivel">
-                            <p class="erro-valor">Por favor, insira um valor válido!</p>
+                            <p class="erro-valor">Por favor, preencha corretamente!</p>
                         </div>
                     </div>
                     <div class="form-floating mb-3">
@@ -91,6 +99,9 @@
                 <div class="form-floating mb-3 form-txtArea">
                     <textarea class="form-control textArea" id="floatingTextarea" placeholder="Descrição"></textarea>
                     <label for="floatingTextarea">Descrição</label>
+                    <div class="div-desc invisivel erro">
+                        <p class="erro-desc">Por favor, preencha corretamente!</p>
+                    </div>
                 </div>
             </form>
             <div class="botoes">
@@ -99,7 +110,6 @@
                     Enviar
                 </button>
             </div>
-
         </div>
     </main>
 

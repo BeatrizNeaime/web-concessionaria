@@ -73,6 +73,7 @@ form {
 
 .invisivel {
     display: none;
+    transition: .3s ease;
 }
 
 label {
