@@ -1,0 +1,17 @@
+@import url(../root.css);
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+
+    .botoes {
+        margin-bottom: 1.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    input[type=text] {
+        width: 382px;
+    }
+
+}
