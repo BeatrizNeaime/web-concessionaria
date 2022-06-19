@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="./css/cabecalho--responsivo.css">
 
     <!-- Ícone -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/icones/safety car/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/icones/safety car/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/icones/safety car/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/icones/favicon_io/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img//icones/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img//icones/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./img/icones/favicon_io/site.webmanifest">
 
 </head>
 
@@ -25,7 +25,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./img/icones/icons8-led-64.png" alt="" class="icone"></a>
+                <a class="navbar-brand" href="home.html"><img src="./img/icones/icone-removebg-preview.png" alt="" class="icone"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +34,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./home.html">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="allCars.html">Nossos Carros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-active" href="addCarro.html">Adicionar Carros</a>
+                            <a class="nav-link link-active" href="#">Adicionar Carros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./sobre.html">Sobre Nós</a>
@@ -94,6 +97,9 @@
                     <div class="form-floating mb-3">
                         <input type="text" class="form-control" id="cor" placeholder="Cor" data-js="cor">
                         <label for="cor">Cor</label>
+                        <div class="div-cor erro invisivel">
+                            <p class="erro-cor">Por favor, preencha corretamente!</p>
+                        </div>
                     </div>
                 </div>
                 <div class="form-floating mb-3 form-txtArea">

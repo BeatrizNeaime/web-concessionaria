@@ -42,12 +42,11 @@ const divs = ['.div-marca', '.div-modelo', '.div-ano', '.div-valor', '.div-cor',
 var botao = $(".enviar")
 
 botao.on("click", function () {
-    console.log(ids.length)
-    for (let i = 0; i < ids.length; i++) {
-        if ($(ids[i]).val().length < 1) {
-            $(divs[i]).removeClass('invisivel')
+    for(let i = 0; i<divs.length; i++){
+        if($(ids[i]).val().length < 1){
             console.log($(divs[i]))
-        } else {
+            $(divs[i]).removeClass('invisivel')
+        } else{
             $(divs[i]).addClass('invisivel')
         }
     }
