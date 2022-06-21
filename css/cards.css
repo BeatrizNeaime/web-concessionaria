@@ -2,7 +2,9 @@
 
 .card{
     background-color: var(--cinza-escuro);
+    box-shadow: inset 5px 5px 5px rgba(102, 99, 96, 0.71);
     color: #fefefe;
+    padding: 6px;
 }
 
 .card .btn-primary{

@@ -36,6 +36,20 @@
     height: 2.3rem;
 }
 
+.enviado{
+    background-color: var(--verde);
+    border-radius: 6px;
+    box-shadow: var(--sombra);
+    color: #fefefe;
+    text-align: center;
+    padding: 10px;
+}
+
+.enviado-popup{
+    margin: 15px;
+    padding: 0;
+}
+
 form {
     margin-top: 1.5rem;
 }

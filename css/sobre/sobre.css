@@ -1,0 +1,81 @@
+@import url(../root.css);
+
+.btn-primary, .btn-secondary {
+    background-color: var(--verde);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--verde-escuro);
+    border: none;
+}
+
+.cards {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 85px;
+    width: 80vw;
+}
+
+.card, .modal-content {
+    background-color: var(--cinza-escuro);
+    box-shadow: inset 5px 5px 5px rgba(102, 99, 96, 0.71);
+    color: #fefefe;
+    padding: 8px;
+}
+
+.conteudo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.legenda {
+    color: #000;
+    padding-left: 10px;
+    text-decoration: none;
+    transform: translateY(-25px);
+}
+
+.legenda:hover{
+    background-color: rgba(5, 166, 120, .40);
+    color: black;
+    cursor: pointer;
+    width: 55%;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 86vh;
+    margin-top: 60px;
+}
+
+.redes {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.redes a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.github:hover {
+    color: #6e5494;
+}
+
+.linkedin:hover {
+    color: #0077b5;
+}
+
+.txt p {
+    text-align: justify;
+}

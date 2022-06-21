@@ -9,16 +9,29 @@
     .container {
         flex-direction: column;
     }
+
+    .footer{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
     input[type=text] {
         width: 93vw;
     }
+
+
 }
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
     .erro:not(.div-desc){
         width: 200px;
     }
-    input[type=text]{
-        width: 200px;
+
+    .container {
+        flex-direction: column;
     }
+    input[type=text] {
+        width: 90vw;
+    }
+    
 }

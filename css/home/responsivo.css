@@ -1,0 +1,138 @@
+@media screen and (min-width: 320px) and (max-width:425px) {
+
+    body {
+        width: 10;
+    }
+
+    .bem-vindo--msg {
+        margin: 0;
+        width: 90vw;
+    }
+
+    .capa img {
+        margin: 0 0 20px 0;
+        width: 85vw;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .field {
+        margin: 0 0 0 15px;
+        text-align: justify;
+        padding: 0;
+        width: 90vw;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 540px) {
+
+    .btns-home {
+        margin: 15px 0;
+    }
+
+    .capa {
+        align-items: center;
+        margin: 0 0 0 0;
+        width: 100vw;
+    }
+
+    .capa img {
+        width: 85vw;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .field {
+        margin: 0 0 0 15px;
+        width: 90vw;
+    }
+
+    footer {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 960px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .field {
+        width: 90vw;
+    }
+
+    .home-carros {
+        height: 45px;
+    }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1024px) {
+    .capa {
+        width: 30vw;
+    }
+
+    .capa img {
+        width: 100%;
+    }
+
+    .field {
+        margin-right: 15px;
+        width: 85vw;
+    }
+
+    .home-carros {
+        height: 50px;
+    }
+
+    main {
+        height: 80vh;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1219px) {
+    .capa img {
+        width: 40vw;
+    }
+
+    .field {
+        margin-right: 15px;
+        width: 60vw;
+    }
+
+    main {
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+
+    .home-carros {
+        font-size: 18px;
+        height: 60px;
+    }
+
+    .capa img {
+        margin-top: 15px;
+        height: 100%;
+        width: 30vw;
+    }
+
+    .field {
+        margin: 0 auto;
+        width: 50vw;
+    }
+
+    main {
+        height: 90vh;
+    }
+}

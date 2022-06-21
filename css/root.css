@@ -10,33 +10,38 @@
     --sombra: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background-color: var(--cinza-claro);
-    width: 10px; 
-}
-::-webkit-scrollbar-thumb{
-    background: var(--cinza-escuro);
+    width: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb {
+    background: var(--cinza-escuro);
+    border-radius: 12px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
     background-color: #05A678;
 }
 
-body{
+body {
     background-color: var(--cinza-claro);
+    min-height: 100%;
 }
 
-main{
+main {
     padding: 1rem 0;
     margin-top: 1rem;
 }
 
-footer{
-    text-align: center;
+.footer {
     background-color: var(--cinza-claro);
     color: #fefefe;
+    margin-top: 1.5rem;
+    text-align: center;
 }
 
-.invisivel{
+.invisivel {
     display: none;
 }
